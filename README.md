@@ -34,7 +34,7 @@ Download the following files to the `iso` directory:
 - [`AlmaLinux-8-latest-x86_64-minimal.iso`](https://mirror.accum.se/mirror/almalinux.org/8.9/isos/x86_64/AlmaLinux-8-latest-x86_64-minimal.iso)
 - [`VBoxGuestAdditions_7.0.12.iso`](https://download.virtualbox.org/virtualbox/7.0.12/VBoxGuestAdditions_7.0.12.iso)
 
-When using different versions, adapt the file names and SHA256 checksums in `templates/centos8-basebox.json` accordingly.
+When using different versions, adapt the file names and SHA256 checksums in `templates/almalinux8-basebox.json` accordingly.
 
 # Makefile for Packer builds
 
