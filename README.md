@@ -31,8 +31,8 @@ See the `centos7` branch for Puppet, Weblogic 12c and Oracle 12c boxes (developm
 
 Download the following files to the `iso` directory:
 
-- [`CentOS-8.2.2004-x86_64-minimal.iso`](http://isoredirect.centos.org/centos/8.2.2004/isos/x86_64/CentOS-8.2.2004-x86_64-minimal.iso)
-- [`VBoxGuestAdditions_6.1.26.iso`](https://download.virtualbox.org/virtualbox/6.1.26/VBoxGuestAdditions_6.1.26.iso)
+- [`AlmaLinux-8-latest-x86_64-minimal.iso`](https://mirror.accum.se/mirror/almalinux.org/8.9/isos/x86_64/AlmaLinux-8-latest-x86_64-minimal.iso)
+- [`VBoxGuestAdditions_7.0.12.iso`](https://download.virtualbox.org/virtualbox/7.0.12/VBoxGuestAdditions_7.0.12.iso)
 
 When using different versions, adapt the file names and SHA256 checksums in `templates/centos8-basebox.json` accordingly.
 
