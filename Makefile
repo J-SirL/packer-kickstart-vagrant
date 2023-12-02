@@ -14,8 +14,8 @@ boxes: $(TARGETS)
 .PHONY: basebox
 basebox: $(foreach box, $(BASE_BOXES), builds/virtualbox-$(box).box)
 
-builds/virtualbox-%.box: templates/%.json
-	packer build -force $<
+builds/virtualbox-%.box: templates/%.pkr.hcl
+	packer2 build -force $<
 
 $(foreach box, $(BASE_BOXES), builds/virtualbox-$(box).box): \
 builds/virtualbox-%.box: http/%.ks scripts/basebox/*.sh
