@@ -1,6 +1,0 @@
----
-
-- name: restart cntlmd
-  service:
-    name: cntlmd
-    state: restarted

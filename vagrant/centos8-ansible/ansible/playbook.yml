@@ -1,7 +1,0 @@
----
-- hosts: all
-  become: yes
-  tasks:
-
-  - name: Print out the hostname of target
-    command: hostname

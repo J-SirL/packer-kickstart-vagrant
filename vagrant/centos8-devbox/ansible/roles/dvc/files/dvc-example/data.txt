@@ -1,5 +1,0 @@
-person
-woman
-man
-camera
-tv

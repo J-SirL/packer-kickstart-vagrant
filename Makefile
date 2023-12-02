@@ -1,9 +1,9 @@
-BASE_BOXES	= centos8-basebox
-BOXES		= $(BASE_BOXES) centos8-ansible centos8-devbox centos8-oracle19c
+BASE_BOXES	= almalinux8-basebox
+BOXES		= $(BASE_BOXES) almalinux8-ansible almalinux8-devbox almalinux8-oracle19c
 TARGETS		= $(foreach box, $(BOXES), builds/virtualbox-$(box).box)
 
 .PHONY: default
-default: centos8-basebox.add
+default: almalinux8-basebox.add
 
 .PHONY: all
 all: boxes add

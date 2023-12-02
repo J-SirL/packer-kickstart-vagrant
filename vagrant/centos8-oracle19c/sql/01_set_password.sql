@@ -1,6 +1,0 @@
-SET ECHO OFF
-SET VERIFY OFF
-
--- Set system password
-ALTER USER SYSTEM IDENTIFIED BY Welcome01;
-

@@ -4,20 +4,20 @@
 - [Prequisites](#prequisites)
 - [Makefile for Packer builds](#makefile-for-packer-builds)
 - [Boxes created with Packer](#boxes-created-with-packer)
-  - [CentOS 8 base box](#centos-8-base-box)
+  - [Almalinux 8 base box](#centos-8-base-box)
   - [Ansible box](#ansible-box)
   - [Development box](#development-box)
   - [Oracle 19c database](#oracle-19c-database)
 - [Vagrant examples](#vagrant-examples)
-  - [CentOS 8 base box](#centos-8-base-box)
-  - [CentOS 8 Ansible box](#centos-8-ansible-box)
-  - [CentOS 8 Development box](#centos-8-development-box)
-  - [CentOS 8 Oracle 19c box](#centos-8-oracle-19c-box)
+  - [Almalinux 8 base box](#almalinux-8-base-box)
+  - [Almalinux 8 Ansible box](#almalinux-8-ansible-box)
+  - [Almalinux 8 Development box](#almalinux-8-development-box)
+  - [Almalinux 8 Oracle 19c box](#almalinux-8-oracle-19c-box)
 - [References](#references)
 
 # About
 
-This project builds CentOS boxes with Packer and Kickstart for use with Vagrant.
+This project builds Alma Linux boxes with Packer and Kickstart for use with Vagrant.
 Packer templates are provided for creating a minimal base box, and other boxes
 based on this base box. By reusing base boxes instead of provisioning each box from scratch, 
 build time is significantly reduced (similar to layered Docker image builds).
@@ -58,7 +58,7 @@ to build all boxes.
 
 # Boxes created with Packer
 
-## CentOS 8 base box
+## Almalinux 8 base box
 
 The base box is a minimal image created from an ISO image installer
 with Packer and Kickstart. See also [Kickstart tjps](doc/kickstart.md). 
@@ -74,7 +74,7 @@ Password for root and vagrant users is `vagrant`.
 The image contains small filesystems `/`, `/home`, `/tmp`, `/var` and `swap`.
 Post-provisioning scripts should create or extend filesystems before
 installing large software packages (see [LVM tips](doc/lvm.md). Alternatively, modify the partition
-layout in `http/centos8-basebox.ks`.
+layout in `http/almalinux-basebox.ks`.
 
 System updates are performed from the Kickstart provisioning process, in order to compile
 VirtualBox guest additions against the latest kernel from the from Packer shell
