@@ -3,7 +3,7 @@
 # Install local customizations
 
 # Set local timezone
-timedatectl set-timezone Europe/Amsterdam
+timedatectl set-timezone Europe/Stockholm
 
 # Install misc command line tools
 dnf -y  install git-core vim-enhanced wget

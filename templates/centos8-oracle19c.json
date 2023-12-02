@@ -1,12 +1,12 @@
 {
   "variables": {
-    "vm_name": "centos8-oracle19c",
+    "vm_name": "almalinux8-oracle19c",
     "memory": "8192",
     "cpus": "2",
     "staging_dir": "/stage",
     "ssh_username": "vagrant",
     "ssh_password": "vagrant",
-    "source_path": "output-virtualbox-centos8-basebox/centos8-basebox.ovf"
+    "source_path": "output-virtualbox-almalinux8-basebox/almalinux8-basebox.ovf"
   },
 
   "provisioners": [
